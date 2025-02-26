@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieMinds - Add Review</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="scripts/addReview.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="hero-overlay">
+        <img class="hero-img" src="photos/heroIMG.jpg" alt="hero img" />
+      </div>
+      <div class="menuBar">
+        <nav>
+          <ul>
+            <li class="item"><a href="homePage.html">Home</a></li>
+            <li class="item"><a href="AboutUs.html">About Us</a></li>
+            <li class="item"><a href="ContactUs.html">Contact Us</a></li>
+            <li class="item"><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="movieSection">
+        <div class="movieInfo" id="movieInfo">
+          <!-- Movie details display here -->
+        </div>
+        <div class="moviePoster">
+          <img id="moviePoster" src="" alt="Movie Poster" class="movieCard" />
+        </div>
+      </section>
+
+      <!-- Review Section -->
+      <section class="reviewSection">
+        <div class="formbox">
+          <h1>Add Your Review</h1>
+          <form id="reviewForm">
+            <label>Your Name:</label>
+            <input
+              type="text"
+              id="reviewerName"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label>Your Review:</label>
+            <textarea
+              rows="5"
+              cols="70"
+              id="reviewBody"
+              placeholder="Share your review"
+              required
+            ></textarea>
+
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+
+        <!-- Review Display -->
+        <div class="formbox reviews" id="reviews">
+          <h1>Recent Reviews</h1>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>Created By Ghiada</p>
+    </footer>
+  </body>
+</html>

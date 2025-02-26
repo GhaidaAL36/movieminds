@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieMinds - Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="scripts/login.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="hero-overlay">
+        <img class="hero-img" src="photos/heroIMG.jpg" alt="hero img" />
+      </div>
+      <div class="menuBar">
+        <nav>
+          <ul>
+            <li class="item"><a href="homePage.html">Home</a></li>
+            <li class="item"><a href="AboutUs.html">About Us</a></li>
+            <li class="item"><a href="ContactUs.html">Contact Us</a></li>
+            <li class="item"><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="loginSection">
+        <h1 class="headTitle">Login</h1>
+        <form id="loginForm">
+          <div class="formbox">
+            <img class="imglogin" src="photos/login.png" alt="Login Photo" />
+            <label for="UserName">User Name</label>
+            <input
+              id="UserName"
+              name="UserName"
+              type="text"
+              placeholder="Enter your username"
+              required
+            />
+
+            <label for="Password">Password</label>
+            <input
+              id="Password"
+              name="Password"
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <input type="checkbox" id="togglePassword" /> Show Password
+
+            <button type="submit" class="button">Log in</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>Created By Ghiada</p>
+    </footer>
+  </body>
+</html>
